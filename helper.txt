@@ -1,0 +1,5 @@
+Ctrl+Alt+N - запуск
+Ctrl + C - остановить
+
+ g++ *.cpp -o lessens
+ ./lessens

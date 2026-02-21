@@ -1,5 +1,7 @@
-Ctrl+Alt+N - запуск
-Ctrl + C - остановить
+g++ *.cpp -o l
+./l
 
- g++ *.cpp -o lessens
- ./lessens
+g++ _ -o _
+./_
+
+system("chcp 65001");

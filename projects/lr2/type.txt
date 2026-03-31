@@ -1,0 +1,10 @@
+char
+short int
+unsigned short int
+int
+unsigned int
+long int
+unsigned long int
+float
+double
+long double

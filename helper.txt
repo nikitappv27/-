@@ -1,7 +1,4 @@
 g++ *.cpp -o l
 ./l
 
-g++ _ -o _
-./_
-
 system("chcp 65001");

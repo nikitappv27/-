@@ -1,6 +1,6 @@
 #include <iostream>
 #include <string>
-#include "student.h"
+#include "tasks.h"
 
 using namespace std;
 
@@ -8,10 +8,9 @@ int main(int argc, char const *argv[])
 {
     system("chcp 65001");
     
-    //Задание 1
     cout << "Задание 1" << endl;
 
-    const int LENGROUP = 7;
+    const int LENGROUP = 6;
     int i = 0, i_person = 0, i_maxPoint = 0;
     string findPerson;
     const student_task1* person[LENGROUP]{nullptr};
@@ -21,10 +20,9 @@ int main(int argc, char const *argv[])
         {"Попов", "Никита", 231},
         {"Ворошилова", "Елизавета", 227},
         {"Костров", "Михаил", 231},
-        {"Ворошилова", "Василиса", 231},
         {"Ворошилова", "Настя", 240},
-        {"Ягуткин", "Никита", 229},
-        {"Кряквин", "Фрол", 231}
+        {"Костров", "Никита", 229},
+        {"Артемьев", "Фрол", 231}
     };
 
     cout << "Введите фамилию искомого человека: ";
@@ -58,7 +56,7 @@ int main(int argc, char const *argv[])
         cout << "\nИскомый человек: " << endl;
         i = 0;
         while (true) {
-            if (person[i] != nullptr){
+            if (person[i] != nullptr && i != LENGROUP){
                 cout << person[i]->surname << " " << person[i]->name << " " << person[i]->point << endl;
                 i++;
             } else {
@@ -70,7 +68,7 @@ int main(int argc, char const *argv[])
     cout << "\nСамый высокий балл группы: " << endl;
     i = 0;
         while (true) {
-            if (maxPoint[i] != nullptr){
+            if (maxPoint[i] != nullptr && i != LENGROUP){
                 cout << maxPoint[i]->surname << " " << maxPoint[i]->name << " " << maxPoint[i]->point << endl;
                 i++;
             } else {

@@ -1,0 +1,36 @@
+{
+  "files.autoSave": "afterDelay",
+  "editor.formatOnSave": true,
+  "editor.fontLigatures": true,
+  "editor.fontFamily": "'Cascadia Code', 'Fira Code', monospace",
+  "terminal.integrated.defaultProfile.windows": "Git Bash",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "C_Cpp.default.compilerPath": "f:\\f\\apps\\w64forC\\w64devkit\\bin\\g++.exe",
+  "explorer.confirmDelete": false,
+  "terminal.integrated.profiles.windows": {
+    "PowerShell": {
+      "source": "PowerShell",
+      "icon": "terminal-powershell",
+    },
+    "Command Prompt": {
+      "path": [
+        "${env:windir}\\Sysnative\\cmd.exe",
+        "${env:windir}\\System32\\cmd.exe",
+      ],
+      "args": [],
+      "icon": {
+        "id": "terminal-cmd",
+      },
+    },
+    "Git Bash": {
+      "path": "F:\\f\\apps\\git\\Git\\bin\\bash.exe",
+      "args": ["--login", "-i"],
+    },
+  },
+  "liveServer.settings.donotShowInfoMsg": true,
+  "RainbowBrackets.depreciation-notice": false,
+  "cSpell.languageSettings": [],
+  "cSpell.language": "en, ru",
+  "cSpell.userWords": ["chcp", "неагрегатов", "паддинга"],
+  "git.autofetch": true,
+}

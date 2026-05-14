@@ -1,6 +1,7 @@
 #include <iostream>
-#include <string>
 #include <fstream>
+#include <sstream>
+#include <string>
 
 using namespace std;
 
@@ -12,21 +13,24 @@ struct student {
     int course;
 };
 
-int main(int argc, char const *argv[])
-{
-    string element;
-    string line;
-    int i = 1, numberOfPoint = 3;
-    
+int main(int argc, char const *argv[]) {
+    student st;
     ifstream students("students.txt");
-    ofstream positive("grant.txt");
+    ofstream studentProf("grant.txt");
 
-    while (getline(students, element)) {
-        
+    if (!students) {
+        cout << "ошибка открытия";
+        return 0;
     }
-    
+
+    while (students >> st.surname >> st.name >> st.point >> st.group >> st.group) {
+        if (st.point >= 215) {
+            studentProf << st.surname << " " << st.name << " " << st.point << " " << st.group << " " << st.group << endl;
+        }
+    }
+
     students.close();
-    positive.close();
+    studentProf.close();
 
     return 0;
 }
